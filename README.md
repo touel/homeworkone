@@ -1,6 +1,4 @@
-# homeworkone
-Boot Camp Prework Study Guide for Students
-# Horiseon - Made With Love Webpage
+# Horiseon - Made With Love Webpage -homeworkone Repository
 
 ## Description
 
