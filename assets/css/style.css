@@ -15,15 +15,6 @@ body {
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,23 +23,68 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+h1 {display: inline-block;
+    font-size: 48px;
 }
 
+/*removed the header class to remove unnecessary code
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+*/
+
+.seo {
+    color: #d9dcd6;
+}
+
+/*removed the header class to remove unnecessary code
+.header h1 .seo {
+    color: #d9dcd6;
+}
+*/
+
+
+/* Moved same header div element directly below header element
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+*/
+
+
+/* Removed below unnecessary code
+.header div ul {
+    list-style-type: none;
+}*/
+
+ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* removed header class as these are the only 'ul' and 'li' elements in the file
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+*/
+
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+
+/* Added font size to the .content class
 p {
     font-size: 16px;
 }
+*/
 
 .hero {
     height: 800px;
@@ -57,6 +93,12 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -69,10 +111,25 @@ p {
     margin-left: 25px;
 }
 
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    font-size: 16px;
+}
+
+.content div    {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content img {
+    max-height: 200px;
 }
 
 .benefits {
@@ -84,8 +141,14 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    color: #ffffff;
 }
 
+.benefits div{
+    margin-bottom: 32px;
+}
+
+/* removed repetitive margin and color attributes. added the color to the ".benefits" element and created a "div" child to "benefits" parent because margin-bottom did not have desired effect within the parent
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -99,8 +162,14 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+}*/
+
+h3{
+    margin-bottom: 10px;
+    text-align: center;
 }
 
+/* Removed repetitive h3 tags and created a single element
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -115,7 +184,16 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
 
+
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Consolidated img elements with the benefits parent
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -133,7 +211,9 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+*/
 
+/* Moved the 3 child elements below into single div element with 'content' parent 
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -160,7 +240,10 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+*/
 
+
+/* Moved the 3 child elements below into single img element with 'content' parent 
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -173,6 +256,7 @@ p {
     max-height: 200px;
 }
 
+/* Consolidated h2 element moved them to a more logical placement in the CSS code
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -187,6 +271,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+*/
 
 .footer {
     padding: 30px;
@@ -195,6 +280,12 @@ p {
     text-align: center;
 }
 
+h4 {
+    font-size: 20px;
+}
+
+/* Changed footer h2 to h4 
 .footer h2 {
     font-size: 20px;
 }
+*/
